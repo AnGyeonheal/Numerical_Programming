@@ -1,12 +1,12 @@
-# Numerical Programming_2022
+# **<span style="color:blue">Numerical Programming_2022</span>**
 
 
 
-## myMatrix.cpp
+## <span style="background-color:yellow">myMatrix.cpp</span>
 
 
 
-#### createMat()
+### createMat()
 
 Create Matrix
 
@@ -14,7 +14,7 @@ Create Matrix
 Matrix	createMat(int _rows, int _cols);
 ```
 
-#### freeMat()
+### freeMat()
 
 Deallocate Memory
 
@@ -22,11 +22,11 @@ Deallocate Memory
 void	freeMat(Matrix _A);
 ```
 
-##### Parameters
+#### Parameters
 
 + _A : Matrix form. (Should be nxn square.)
 
-#### txt2Mat()
+### txt2Mat()
 
 Bring .txt File to Matrix
 
@@ -34,7 +34,7 @@ Bring .txt File to Matrix
 Matrix	txt2Mat(std::string _filePath, std::string _fileName);
 ```
 
-#### printMat()
+### printMat()
 
 Print the Matrix
 
@@ -42,12 +42,12 @@ Print the Matrix
 void	printMat(Matrix _A, const char* _name);
 ```
 
-##### Parameters
+#### Parameters
 
 + _A : Matrix form.
 + char*_name: Explaining what this Matrix is.
 
-#### initMat()
+### initMat()
 
 Initialize Matrix elements
 
@@ -55,12 +55,12 @@ Initialize Matrix elements
 void	initMat(Matrix _A, double _val);
 ```
 
-##### Parameters
+#### Parameters
 
 + _A : Matrix form. (Should be nxn square.)
 + _val : Initializing Matrix element with this value.
 
-#### zeros()
+### zeros()
 
 Create matrix of all zeros
 
@@ -68,12 +68,12 @@ Create matrix of all zeros
 Matrix	zeros(int _rows, int _cols);
 ```
 
-##### Parameters
+#### Parameters
 
 + _rows : Set the number of rows
 + _cols : Set the number of cols
 
-#### eye()
+### eye()
 
 Create identity Matrix
 
@@ -81,12 +81,12 @@ Create identity Matrix
 Matrix	eye(int _rows, int _cols);
 ```
 
-##### Parameters
+#### Parameters
 
 + _rows : Set the number of rows
 + _cols : Set the number of cols
 
-#### transpose()
+### transpose()
 
 Transpose the Matrix
 
@@ -94,11 +94,11 @@ Transpose the Matrix
 Matrix	transpose(Matrix _A);
 ```
 
-##### Parameters
+#### Parameters
 
 + _A : Matrix form. (Should be nxn square.)
 
-#### copyMat()
+### copyMat()
 
 Copy the Matrix
 
@@ -106,11 +106,11 @@ Copy the Matrix
 Matrix	copyMat(Matrix _A)
 ```
 
-##### Parameters
+#### Parameters
 
 + _A : Matrix form. (Should be nxn square.)
 
-#### copyVal()
+### copyVal()
 
 Copy the Matrix elements from _A to _B
 
@@ -118,7 +118,7 @@ Copy the Matrix elements from _A to _B
 void	copyVal(Matrix _A, Matrix _B);
 ```
 
-##### Parameters
+#### Parameters
 
 + _A : Matrix which want to copy.  
 
@@ -126,7 +126,7 @@ void	copyVal(Matrix _A, Matrix _B);
 
    ** A  matrix's number of rows and columns should be same with _B*
 
-#### multiply()
+### multiply()
 
 Multiply Matrix _A and _B  
 
@@ -136,7 +136,7 @@ ex) P = AB
 Matrix multiply(Matrix _A, Matrix _B);
 ```
 
-##### Parameters
+#### Parameters
 
 + _A : Matrix form. (Should be nxn Matrix.)
 
@@ -144,7 +144,7 @@ Matrix multiply(Matrix _A, Matrix _B);
 
    ** A  matrix's number of rows and columns should be same with _B*
 
-#### subMat()
+### subMat()
 
 Subtract Matrix _A - _B
 
@@ -154,7 +154,7 @@ ex) P = A - B
 Matrix subMat(Matrix _A, Matrix _B);
 ```
 
-##### Parameters
+#### Parameters
 
 + _A : Matrix form. (Should be nxn Matrix.)
 
@@ -162,7 +162,7 @@ Matrix subMat(Matrix _A, Matrix _B);
 
    ** A  matrix's number of rows and columns should be same with _B*
 
-#### xMat()
+### xMat()
 
 Multiply scalar with Matrix
 
@@ -172,12 +172,12 @@ ex) P = c * A
 Matrix xMat(Matrix _A, double _c);
 ```
 
-##### Parameters
+#### Parameters
 
 + _A : Matrix form.
 + _c : Scalar which want to multiply
 
-#### volMat()
+### volMat()
 
 Get volume of Matrix
 
@@ -185,6 +185,6 @@ Get volume of Matrix
 double volMat(Matrix _A);
 ```
 
-##### Parameters
+#### Parameters
 
 + _A : Matrix form.
